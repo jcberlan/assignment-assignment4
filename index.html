@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MenuApp">
+
+<head>
+    <meta charset="utf-8">		
+	<!-- LIBRARIES-->	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant Menu App(JCB)</title>
+	<script src="lib/angular.js"></script>
+	<script src="lib/angular-ui-router.min.js"></script>
+	<link rel="stylesheet" href="/styles/styles.css">
+	<link rel="stylesheet" href="/styles/bootstrap.min.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="header clearfix">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+							 
+                    <li ui-sref-active="active" ui-sref="home"><a href="#">Home</a></li>
+                    <li ui-sref-active="active" ui-sref="categories"><a href="#">Categories</a></li>
+                </ul>
+            </nav>
+            <h1><bold>Restaurant Menu App (JCB)</bold></h1>
+        </div>
+        <ui-view></ui-view>
+    </div>
+	<!-- MODULES-->			
+    <script src="modules/menuapp.module.js"></script>
+    <script src="modules/data.module.js"></script>
+	<!-- CONTROLERS-->
+    <script src="modules/categoriestoshow.controller.js"></script>
+    <script src="modules/itemstosearch.controller.js"></script>
+	<!--SERVICES-->
+    <script src="modules/menudata.service.js"></script>
+	<!--COMPONENTS-->
+    <script src="modules/categoriestoshow.component.js"></script>
+    <script src="modules/items.component.js"></script>
+	<!-- ROUTING TO VIEWS-->
+    <script src="modules/routes.js"></script>
+	<!-- htmltemplates-->
+    <script src="modules/htmltemplates/home.template.html"></script>
+    <script src="modules/htmltemplates/categoriestoshow.component.html"></script>
+    <script src="modules/htmltemplates/categoriestoshow.template.html"></script>
+    <script src="modules/htmltemplates/itemslist.component.html"></script>
+    <script src="modules/htmltemplates/itemstolist.template.html"></script>
+</body>
+
+</html>
