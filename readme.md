@@ -13,6 +13,6 @@ The categories view should list all available categories of items on the menu. E
 
 Make sure that if, while viewing the list of menu items for a particular category, the user copies the URL in the browser's address bar and pastes it into a new tab or a different browser, that the view is the same as the original one.
 My exercise is there. Be careful with the stylesheets
-https://jcberlan.github.io/styles/styles.css
+https://jcberlan.github.io/assignment-assignment4/
 
 
